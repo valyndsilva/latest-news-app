@@ -9,6 +9,8 @@
 - [GraphQL](https://graphql.org/)
 - [Tailwind CSS](https://tailwindcss.com/docs/guides/nextjs)
 - [Hero Icons](https://heroicons.com/)
+- [React TimeAgo](https://www.npmjs.com/package/react-timeago)
+- [Vercel](https://vercel.com/)
 
 ## Demo
 

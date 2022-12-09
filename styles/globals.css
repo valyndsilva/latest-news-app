@@ -1,3 +1,45 @@
+@import url("/fonts/poppins/stylesheet.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .blur-spot {
+    background: rgba(176, 105, 92, 0.9);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -9;
+  }
+
+  .hero-blur {
+    width: 22rem;
+    height: 30rem;
+    left: 0rem;
+  }
+
+  .plan-blur-1 {
+    width: 10rem;
+    height: 10rem;
+    top: 45rem;
+    left: 0rem;
+  }
+
+  .plan-blur-2 {
+    width: 10rem;
+    height: 10rem;
+    top: 5rem;
+    right: 0rem;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-balticSea dark:bg-chalk/80 text-white dark:text-balticSea px-4 lg:px-8 py-2 rounded-full cursor-pointer disabled:bg-balticSea/20 disabled:dark:bg-chalk/10;
+  }
+  .navLink {
+    @apply text-center border-[1px] border-balticSea dark:border-ivory rounded-full px-4 py-2 mb-4 cursor-pointer hover:font-bold hover:border-clay dark:hover:border-clay  active:border-clay active:text-clay transition-transform duration-200 ease-out;
+  }
+  .headerTitle {
+    @apply text-4xl capitalize px-10 pt-5 underline decoration-clay decoration-2 underline-offset-4 decoration-double;
+  }
+}
