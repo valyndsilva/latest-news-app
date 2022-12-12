@@ -1,16 +1,18 @@
 import React from "react";
-import fetchNews from "../../../utils/fetchNews";
-import response from "../../../response.json";
-import NewsList from "../../NewsList";
 import { categories } from "../../../constants";
-type Props = { category: Category };
+import response from "../../../response.json";
+import fetchNews from "../../../utils/fetchNews";
+import NewsList from "../../NewsList";
+type Props = { slug: Category };
 
-async function CategoryPage({ category }: Props) {
-  //   const news: NewsResponse = await fetchNews(category);
-  const news: NewsResponse = response;
+async function CategoryPage({ slug }: Props) {
+  // console.log("Category selected:", slug);
+  const news: NewsResponse = await fetchNews(slug);
+  //  const news: NewsResponse = response || (await fetchNews(category));
+  // const news: NewsResponse = response;
   return (
     <div>
-      <h1 className="headerTitle">{category}</h1>
+      <h1 className="headerTitle">{slug}</h1>
       <NewsList news={news} />
     </div>
   );
@@ -19,7 +21,7 @@ async function CategoryPage({ category }: Props) {
 export default CategoryPage;
 
 export async function generateStaticParams() {
-  return categories.map((category) => ({ category: category }));
+  return categories.map((category) => ({ slug: category }));
 }
 
 // Pre-builds all these pages. The fetch revalidation rules keeps the cached values up-to-date.

@@ -10,7 +10,8 @@ const fetchNews = async (
   const query = gql`
     query MyQuery(
       $access_key: String!
-      $categories: String!
+      # $categories: String!
+      $categories: String
       $keywords: String
     ) {
       myQuery(
@@ -41,41 +42,52 @@ const fetchNews = async (
       }
     }
   `;
+
   // Fetch function with NextJS 13 caching....
   //cache:no-cache means SSR
   //cache:default means SSG / ISR
 
-  const res = await fetch(
-    "https://tomsriver.stepzen.net/api/latest-news/__graphql",
-    {
-      method: "POST",
-      cache: isDynamic ? "no-cache" : "default",
-      next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`,
-      },
-      body: JSON.stringify({
-        query,
-        variables: {
-          access_key: process.env.MEDIASTACK_API_KEY,
-          categories: category,
-          keywords: keywords,
-        },
-      }),
-    }
-  );
+  const variables = {
+    access_key: process.env.MEDIASTACK_API_KEY,
+    categories: category,
+    keywords: keywords,
+  };
+  const body = JSON.stringify({
+    query,
+    variables,
+  });
+  const headers = {
+    Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`,
+    "Content-Type": "application/json",
+    "User-Agent": "Node",
+  };
+
+  const res = await fetch(`${process.env.STEPZEN_API_URL}`, {
+    method: "POST",
+    cache: isDynamic ? "no-cache" : "default",
+    next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
+    headers,
+    body,
+  });
+
   console.log(
     "Loading latest data from API for category >>>",
     category,
     keywords
   );
-
-  const newResponse = await res.json();
-
-  // Sort function by images v/s no images present
-  const news = sortNewsByImage(newResponse.data.myQuery);
-  return news;
+  console.log(res);
+  const newsResponse = await res.json();
+  if (newsResponse.data) {
+    console.log(newsResponse.data);
+    // Sort function by images v/s no images present
+    const news = sortNewsByImage(newsResponse.data.myQuery);
+    console.log(news);
+    return news;
+  }
+  if (newsResponse.errors) {
+    console.error(newsResponse.errors);
+    // throw new Error("Failed to fetch API");
+  }
 };
 
 export default fetchNews;

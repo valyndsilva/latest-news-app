@@ -1,15 +1,20 @@
 import React from "react";
 import fetchNews from "../../utils/fetchNews";
-import response from "../../response.json";
+import generalResponse from "../../generalResponse.json";
 import NewsList from "../NewsList";
 
 type Props = { searchParams?: { term: string } };
 
 async function SearchPage({ searchParams }: Props) {
   // Fetch news data
-//   const news: NewsResponse =
-//     response || (await fetchNews("general", searchParams?.term, true));
-    const news: NewsResponse = response;
+  const news: NewsResponse = await fetchNews(
+    "general",
+    searchParams?.term,
+    true
+  );
+  // const news: NewsResponse =
+  //   generalResponse || (await fetchNews("general", searchParams?.term, true));
+  // const news: NewsResponse = generalResponse;
   console.log(news);
   return (
     <div>

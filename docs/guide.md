@@ -1037,6 +1037,8 @@ Open the url
 
 ```
 http://api.mediastack.com/v1/news?access_key={mediastack_api_key}}&sources=cnn,bbc&categories=general,business,entertainment,health,science,sports,technology&countries=us,au&languages=en&sort=published_desc&offset=0&limit=100
+
+http://api.mediastack.com/v1/news?access_key={mediastack_api_key}}&sources=cnn,bbc&categories=general&countries=us,au&languages=en&sort=published_desc&offset=0&limit=100
 ```
 
 Copy the response.
@@ -1686,4 +1688,70 @@ function ArticlePage({ searchParams }: Props) {
 
 export default ArticlePage;
 
+```
+
+## Add a Loading page:
+
+### In app/loading.tsx:
+
+```
+import React from "react";
+
+type Props = {};
+
+function loading({}: Props) {
+  return (
+    <div className="animate-pulse text-lg text-ivory text-center p-10">
+      Loading New Feed...
+    </div>
+  );
+}
+
+export default loading;
+
+```
+
+### Update app/article/page.tsx:
+
+```
+import React from "react";
+import { categories } from "../constants";
+import fetchNews from "../utils/fetchNews";
+import NewsList from "./NewsList";
+import response from "../response.json";
+type Props = {};
+
+async function Home({}: Props) {
+  // Fetch news data
+  // const news: NewsResponse =
+  //   response || (await fetchNews(categories.join(",")));
+  const news: NewsResponse = response;
+  console.log({ news });
+  //set timeout for 3 seconds to show loading
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+  return (
+    <div className="">
+      <div className="blur-spot blur-[150px] plan-blur-1"></div>
+      <div className="blur-spot blur-[150px] plan-blur-2"></div>
+      <NewsList news={news} />
+    </div>
+  );
+}
+
+export default Home;
+
+```
+
+## Deply to Vercel:
+
+```
+vercel login
+vercel
+Setup and deploy: Y
+valyndsilva
+N
+latest-new-app
+Add env to vercel
+vercel env pull
+vercel build or npm run build
 ```

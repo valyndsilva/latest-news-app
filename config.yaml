@@ -1,0 +1,4 @@
+configurationset:
+  - configuration:
+      name: curl_import_config
+      authentication_dca5d8f3aa: tomsriver::stepzen.net+1000::14a3a1eb780b28c5d4015000736b93cc06ac42b1f751c2978906d25c43dd3e9c

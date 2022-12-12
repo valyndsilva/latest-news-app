@@ -27,7 +27,7 @@ type DataEntry = {
   url: string;
 };
 
-type NewsResponse = {
-  pagination?: Pagination;
-  data?: DataEntry[];
-};
+interface NewsResponse {
+  pagination: Pagination;
+  data: DataEntry[];
+}

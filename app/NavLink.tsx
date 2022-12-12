@@ -10,8 +10,7 @@ function NavLink({ category, isActive }: Props) {
   return (
     <Link
       href={`/news/${category}`}
-      as={`/news/${category}`}
-      className={`navLink  ${isActive && ""}`}
+      className={`navLink  ${isActive && "text-clay dark:active:border-clay"}`}
     >
       {category}
     </Link>

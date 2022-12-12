@@ -26,11 +26,11 @@ type Query {
     access_key: String
     categories: String
     countries: String
+    sort: String
+    keywords: String
     languages: String
     limit: String
     offset: String
-    sort: String
     sources: String
-    keywords: String
   ): Root @rest(endpoint: "http://api.mediastack.com/v1/news")
 }
