@@ -41,6 +41,6 @@
     active:text-clay transition-transform duration-200 ease-out;
   }
   .headerTitle {
-    @apply text-4xl capitalize px-10 pt-5 underline decoration-clay decoration-2 underline-offset-4 decoration-double;
+    @apply text-3xl capitalize px-10 pt-5 underline decoration-clay decoration-2 underline-offset-4 decoration-double;
   }
 }

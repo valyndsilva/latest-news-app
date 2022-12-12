@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { notFound } from "next/navigation";
 import LiveTimestamp from "../LiveTimestamp";
@@ -14,6 +15,7 @@ function ArticlePage({ searchParams }: Props) {
     return notFound();
   }
   const article: DataEntry = searchParams;
+  console.log(article);
   return (
     <article>
       <section className="flex flex-col lg:flex-row pb-24 px-0 lg:px-10">
@@ -29,8 +31,8 @@ function ArticlePage({ searchParams }: Props) {
             {article.title}
           </h1>
           <div className="flex divide-x-2 space-x-4">
-            <h2 className="font-bold">By: {article.author}</h2>
-            <h2 className="font-bold pl-4">Source: {article.source}</h2>
+            {/* <h2 className="font-bold">By: {article.author}</h2> */}
+            <h2 className="font-bold">Source: {article.source}</h2>
             {/* <p className="pl-4">{article.published_at}</p> */}
             <p className="pl-4"><LiveTimestamp timestamp={article.published_at}/></p>
           </div>

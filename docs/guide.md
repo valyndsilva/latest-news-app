@@ -808,8 +808,6 @@ OR
 stepzen import curl "http://api.mediastack.com/v1/news?access_key={process.env.MEDIASTACK_API_KEY}&sources=cnn,bbc&categories=general,business,entertainment,health,science,sports,technology&countries=us,au&languages=en&sort=published_desc&offset=0&limit=100"
 ```
 
-This imports schema curl from StepZen automatically creating a index.graphql file in the root:
-
 ```
 schema @sdl(files: ["curl/index.graphql"]) {
   query: Query

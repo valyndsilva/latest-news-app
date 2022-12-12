@@ -2,15 +2,13 @@ import React from "react";
 import { categories } from "../constants";
 import fetchNews from "../utils/fetchNews";
 import NewsList from "./NewsList";
-import response from "../response.json";
+import generalResponse from "../generalResponse.json";
 type Props = {};
 
 async function Home({}: Props) {
   // Fetch news data
-  const news: any = await fetchNews(categories.join(","));
-  // const news: NewsResponse =
-  //   response || (await fetchNews(categories.join(",")));
-  // const news: NewsResponse = response;
+  // const news: any = await fetchNews(categories.join(","));
+  const news: any = generalResponse || (await fetchNews(categories.join(",")));
   console.log({ news });
 
   //set timeout for 3 seconds to show loading

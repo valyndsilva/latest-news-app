@@ -1,0 +1,183 @@
+{
+  "pagination": { "limit": 100, "offset": 0, "count": 100, "total": 6868 },
+  "data": [
+    {
+      "author": null,
+      "title": "\u0027Who started it?\u0027 Putin defends assault on Ukrainian civilian infrastructure",
+      "description": "President Vladimir Putin made rare public comments specifically addressing the Russian military\u0027s attacks on Ukraine\u0027s energy infrastructure Thursday, while clutching a glass of champagne at a Kremlin reception.",
+      "url": "https://www.cnn.com/2022/12/09/europe/putin-ukrainian-infrastructure-strikes-intl/index.html",
+      "source": "CNN Europe",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/221209100919-01-putin-rare-comments-ukraine-grab-120822-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-09T12:55:21+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "Brittney Griner released from Russian detention",
+      "description": "WNBA star Brittney Griner is heading home after she was released from a Russian jail in a prisoner swap for convicted arms dealer Viktor Bout. Follow live news updates here.",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-09-22/index.html",
+      "source": "CNN Europe",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/221208152115-brittney-griner-plane-vpx-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-09T05:05:22+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "New images of Griner and Bout: Russian state media shows video of the two boarding planes",
+      "description": "New images of Griner and Bout: Russian state media shows video of the two boarding planes",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-08-22/h_0f0adf930c346e05e05831ace240fb05",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/150325082152-social-gfx-cnn-logo-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-08T21:05:04+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "Griner expected to land in San Antonio following release from Russian detention",
+      "description": "Griner expected to land in San Antonio following release from Russian detention",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-08-22/h_2f21ad20074d4685b4341546fe19ffce",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/150325082152-social-gfx-cnn-logo-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-08T21:05:04+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "Home front: Putin makes rare public comments about Russian strikes against Ukrainian infrastructure",
+      "description": "Home front: Putin makes rare public comments about Russian strikes against Ukrainian infrastructure",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-08-22/h_aea9d9149a72232d60137554cc312f1e",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/150325082152-social-gfx-cnn-logo-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-08T16:25:03+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "Third parties: Griner\u0027s prisoner exchange was a result of mediation from UAE and Saudi Arabia",
+      "description": "Third parties: Griner\u0027s prisoner exchange was a result of mediation from UAE and Saudi Arabia",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-08-22/h_b5287ae5b3076e1bb617efbfdd7d3c2e",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/150325082152-social-gfx-cnn-logo-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-08T15:35:04+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "Biden: Brittney will soon be back in the arms of her loved ones",
+      "description": "Biden: Brittney will soon be back in the arms of her loved ones",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-08-22/h_9346312643ea14c8f2da2012a8f1772f",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/150325082152-social-gfx-cnn-logo-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-08T14:15:04+00:00"
+    },
+    {
+      "author": null,
+      "title": "Griner\u0027s wife: \u0027The most important emotion that I have right now is just sincere gratitude\u0027",
+      "description": "Griner\u0027s wife: \u0027The most important emotion that I have right now is just sincere gratitude\u0027",
+      "url": "https://www.cnn.com/webview/europe/live-news/russia-ukraine-war-news-12-08-22/h_917e4bb1751c19ab1000ec7a976f838c",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/150325082152-social-gfx-cnn-logo-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-08T14:15:04+00:00"
+    },
+    {
+      "author": null,
+      "title": "\u0027The only deal we could make right now:\u0027 Senior Biden administration official says about swap",
+      "description": "\u0027The only deal we could make right now:\u0027 Senior Biden administration official says about swap",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-08-22/h_c54739bebefca63bc09639278edc8b48",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/150325082152-social-gfx-cnn-logo-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-08T14:15:04+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "Russia\u0027s war in Ukraine",
+      "description": "Crews in Ukraine are racing to repair the country\u0027s energy system as hospitals suspend planned surgeries following Russian strikes. Follow live news updates here.",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-08-22/index.html",
+      "source": "CNN Europe",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/221207164705-kyiv-blackouts-winter-ukraine-war-thumbnail-2-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-08T08:35:19+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "Ukraine war is going to \u0027take a while,\u0027 Putin says as he warns nuclear risk is increasing",
+      "description": "Nearly 10 months after his invasion of Ukraine began, Russian President Vladimir Putin on Wednesday acknowledged that the conflict is \u0022going to take a while,\u0022 as he also warned of the \u0022increasing\u0022 threat of nuclear war.",
+      "url": "https://www.cnn.com/2022/12/07/europe/putin-ukraine-russia-nuclear-intl-hnk/index.html",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/220414145654-vladimir-putin-february-18-2022-file-super-169.jpeg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-08T05:01:09+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "Inside a Kramatorsk hospital saving the lives of Ukraine\u0027s war wounded",
+      "description": "As the young soldier lies motionless in the machine, a group of doctors huddle over a computer in an adjoining room.",
+      "url": "https://www.cnn.com/2022/12/07/europe/ukraine-kramatorsk-hospital-wounded-intl/index.html",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/221207134750-02-kramatorsk-hosptial-cnna-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-07T22:02:43+00:00"
+    },
+
+    {
+      "author": null,
+      "title": "EU implements 9th package of sanctions against Russia",
+      "description": "EU implements 9th package of sanctions against Russia",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-07-22/h_46a94f4c74bf59d16c3a93adcf97c24d",
+      "source": "CNN",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/150325082152-social-gfx-cnn-logo-super-169.jpg",
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-07T20:15:03+00:00"
+    },
+    {
+      "author": null,
+      "title": "Putin says threat of nuclear war is increasing",
+      "description": "Putin says threat of nuclear war is increasing",
+      "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-12-07-22/h_9e32121e0e11c3aa4b0a708befaf3f30",
+      "source": "CNN",
+      "image": null,
+      "category": "general",
+      "language": "en",
+      "country": "us",
+      "published_at": "2022-12-07T19:15:04+00:00"
+    }
+  ]
+}
