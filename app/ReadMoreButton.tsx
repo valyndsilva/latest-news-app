@@ -21,7 +21,7 @@ function ReadMoreButton({ article }: Props) {
   };
 
   return (
-    <button onClick={handleClick} className="btn rounded-t-lg">
+    <button onClick={handleClick} className="btn rounded-lg">
       Read More
     </button>
   );

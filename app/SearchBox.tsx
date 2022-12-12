@@ -7,7 +7,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 type Props = {};
 
 function SearchBox({}: Props) {
-    const [input, setInput] = useState("");
+  const [input, setInput] = useState("");
   const router = useRouter(); // next/navigation for nextjs 13
 
   const handleSearch = (e: FormEvent<HTMLFormElement>) => {
@@ -15,6 +15,7 @@ function SearchBox({}: Props) {
     if (!input) return;
     // router.push(`/search/${input}`); // using dynamic route
     router.push(`/search?term=${input}`); // using query param
+    setInput("");
   };
   return (
     <form className="mt-10 flex space-x-5" onSubmit={handleSearch}>

@@ -11,7 +11,7 @@ const fetchNews = async (
     query MyQuery(
       $access_key: String!
       # $categories: String!
-      $categories: String
+      $categories: String!
       $keywords: String
     ) {
       myQuery(
