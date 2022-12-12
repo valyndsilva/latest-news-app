@@ -28,6 +28,6 @@ type DataEntry = {
 };
 
 interface NewsResponse {
-  pagination: Pagination;
-  data: DataEntry[];
+  pagination?: Pagination;
+  data?: DataEntry[];
 }

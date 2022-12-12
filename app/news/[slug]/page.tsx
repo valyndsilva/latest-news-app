@@ -1,17 +1,19 @@
-import React from "react";
+import React, { FC } from "react";
 import { categories } from "../../../constants";
-import response from "../../../response.json";
+// import response from "../../../response.json";
 import fetchNews from "../../../utils/fetchNews";
 import NewsList from "../../NewsList";
 
-async function CategoryPage({ slug }: { slug?: Category }) {
-  // console.log("Category selected:", slug);
-  const news: NewsResponse = await fetchNews(slug);
+type Props = { params: { slug: Category } };
+
+async function CategoryPage({ params }: Props) {
+  console.log("Category selected:", params);
+  const news: any = await fetchNews(params.slug);
   //  const news: NewsResponse = response || (await fetchNews(category));
   // const news: NewsResponse = response;
   return (
     <div>
-      <h1 className="headerTitle">{slug}</h1>
+      <h1 className="headerTitle"></h1>
       <NewsList news={news} />
     </div>
   );

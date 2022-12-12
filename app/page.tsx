@@ -7,7 +7,7 @@ type Props = {};
 
 async function Home({}: Props) {
   // Fetch news data
-  const news: NewsResponse = await fetchNews(categories.join(","));
+  const news: any = await fetchNews(categories.join(","));
   // const news: NewsResponse =
   //   response || (await fetchNews(categories.join(",")));
   // const news: NewsResponse = response;
