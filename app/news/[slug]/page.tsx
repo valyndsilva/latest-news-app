@@ -3,9 +3,8 @@ import { categories } from "../../../constants";
 import response from "../../../response.json";
 import fetchNews from "../../../utils/fetchNews";
 import NewsList from "../../NewsList";
-type Props = { slug: Category };
 
-async function CategoryPage({ slug }: Props) {
+async function CategoryPage({ slug }: { slug?: Category }) {
   // console.log("Category selected:", slug);
   const news: NewsResponse = await fetchNews(slug);
   //  const news: NewsResponse = response || (await fetchNews(category));
