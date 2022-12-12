@@ -5,6 +5,7 @@
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
+- [MediaStack API](https://mediastack.com/)
 - [StepZen](https://stepzen.com/)
 - [GraphQL](https://graphql.org/)
 - [Tailwind CSS](https://tailwindcss.com/docs/guides/nextjs)
@@ -16,8 +17,14 @@
 
 Checkout the [demo here](https://latest-news-app.vercel.app/)
 
-### Title
+### Dark Mode
 
-![](/public/gifs/....gif)
+![](/public/gifs/dark-mode.gif)
 
-[Expand](/public/demo/....mp4)
+[Expand](/public/demos/dark-mode.mp4)
+
+### Check Articles and Search
+
+![](/public/gifs/search-post.gif)
+
+[Expand](/public/demos/search-post.mp4)
