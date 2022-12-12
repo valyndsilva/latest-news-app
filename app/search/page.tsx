@@ -9,9 +9,8 @@ async function SearchPage({ searchParams }: Props) {
   // Fetch news data
   // const news: any = await fetchNews("general", searchParams?.term, true);
   // const news: NewsResponse = response;
-  const news: any = ukraineResponse|| 
-    await fetchNews("general", searchParams?.term, true)
-  );
+  const news: any =
+    ukraineResponse || (await fetchNews("general", searchParams?.term, true));
   // console.log(news);
 
   return (
